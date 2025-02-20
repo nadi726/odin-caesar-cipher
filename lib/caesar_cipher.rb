@@ -15,12 +15,3 @@ def cipher_char(char, shift_factor)
   new_char_ord = letter_pos + starting_ord
   new_char_ord.chr
 end
-
-def test_cipher
-  puts "empty string -> #{caesar_cipher('', 23).inspect}"
-  puts "What a string! -> #{caesar_cipher('What a string!', 5)}"
-  puts "aAgGzZ -> #{caesar_cipher('aAgGzZ', 2)}"
-  puts "ba -> #{caesar_cipher('ba', -2)}"
-  puts "hello, !\#@$@. -> #{caesar_cipher("hello, !\#@$@.", 6)}"
-  puts "hello test -> #{caesar_cipher('hello test', 100)}"
-end
